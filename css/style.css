@@ -1,0 +1,48 @@
+*{
+    padding: 0;/* espacamento interno: 0; */
+    margin: 0;/* margem externa: 0; */
+    box-sizing: border-box;/* tamanho-da-caixa: caixa-de-fronteira; */
+}
+
+html,body{
+    height: 100%;/* altura: 100% */
+}
+
+.center{
+    max-width: 1280px;/* largura-máxima: 1280px; */
+    margin: 0 auto;/* margem externa: vertical 0 horizontal automatica */
+}
+
+.clear{
+    clear: both;/* limpar: ambos */
+}
+
+.header{/* seletor de classe = (.); nome da classe = (header); sintax de declaracao = ({})*/
+    width: 100%;/* largura: 100%; */
+    height: 60px;/* altura: 60px; */
+    background-color: #212343;/* cor-de-fundo: valor hexagonal 212343 */
+}
+
+.header img{/* seletor de classe = (.); nome da classe = (header); nome da tag = (img); sintax de declaracao = ({})*/
+    margin: 19px;/* margem externa: 19px em todos os lados */
+}
+
+.container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
+    width: 100%;/* largura: 100% com base na largura do elemento pai */ 
+    height: 557px;/* altura: 557px */ 
+    background-image: url('../images/header_bg.png');/* imagem-de-fundo: url('local da imagem') */ 
+    background-size: cover;/* tamanho-de-fundo */ 
+    background-position: center;/* posição-de-fundo */ 
+}
+
+.container-banner > .center{
+    height: 100%;/* altura: 100% com base na altura elemento pai */
+}
+
+.form{/* elemento com a classe form */
+    width: 400px;/* largura: 400px  */
+    height: 100%;/* altura: 100% com base na altura elemento pai */
+    background-color: white;/* cor-de-fundo: branco*/
+    float: right;/* flutuação: direita */
+    margin: 50px;/* margem externa: 50px em todos os lados*/
+}
