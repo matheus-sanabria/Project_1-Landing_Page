@@ -2,6 +2,7 @@
     padding: 0;/* espacamento interno: 0; */
     margin: 0;/* margem externa: 0; */
     box-sizing: border-box;/* tamanho-da-caixa: caixa-de-fronteira; */
+    font-family: 'Lato', 'Open Sans', sans-serif!important;
 }
 
 html,body{
@@ -29,7 +30,7 @@ html,body{
 
 .container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100% com base na largura do elemento pai */ 
-    height: 557px;/* altura: 557px */ 
+    max-height: 470px;/* altura-maxima: 470px */ 
     background-image: url('../images/header_bg.png');/* imagem-de-fundo: url('local da imagem') */ 
     background-size: cover;/* tamanho-de-fundo */ 
     background-position: center;/* posição-de-fundo */ 
@@ -41,8 +42,65 @@ html,body{
 
 .form{/* elemento com a classe form */
     width: 400px;/* largura: 400px  */
-    height: 100%;/* altura: 100% com base na altura elemento pai */
+    height: calc(100% + 50px);/* altura: 100% com base na altura elemento pai */
     background-color: white;/* cor-de-fundo: branco*/
+    position: relative;
+    top: -25px;
     float: right;/* flutuação: direita */
-    margin: 50px;/* margem externa: 50px em todos os lados*/
+    margin-right: 50px;/* margem externa: 50px em todos os lados*/
+    padding: 15px;
+    border: 8px solid #ccc;
+}
+
+.form h2{
+    font-family: normal;
+    color: #999999;
+    font-size: 21px;
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container label,.form p{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #bbbbbb;
+    padding: 5px;
+}
+
+.form p{
+    margin: 18px 0;
+}
+
+.input-container input[type=text],input[type=email]{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 6px;
+    color: #bbbbbb;
+}
+
+.form .submit-button{
+    border: 0;
+    position: relative;
+    /* top: 5px; */
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form .submit-button input[type=submit]{
+    width: 280px;
+    height: 56px;
+    border: 1px solid #ccc;
+    color: white;
+    background-color: #363A6D;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.form .submit-button input[type=submit]:hover{
+    background-color: #323665;
 }
