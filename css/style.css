@@ -2,7 +2,7 @@
     padding: 0;/* espacamento interno: 0; */
     margin: 0;/* margem externa: 0; */
     box-sizing: border-box;/* tamanho-da-caixa: caixa-de-fronteira; */
-    font-family: 'Lato', 'Open Sans', sans-serif!important;
+    font-family: 'Lato', 'Open Sans', sans-serif!important;/* familia da fonte: 'Lato', 'Open Sans', sans-serif !importante */
 }
 
 html,body{
@@ -44,63 +44,62 @@ html,body{
     width: 400px;/* largura: 400px  */
     height: calc(100% + 50px);/* altura: 100% com base na altura elemento pai */
     background-color: white;/* cor-de-fundo: branco*/
-    position: relative;
-    top: -25px;
+    position: relative;/* posicao: relativa */
+    top: -25px;/* superior: -25px*/
     float: right;/* flutuação: direita */
-    margin-right: 50px;/* margem externa: 50px em todos os lados*/
-    padding: 15px;
-    border: 8px solid #ccc;
+    margin-right: 50px;/* margem externa: 50px em todos os lados */
+    padding: 15px;/* espaçamento interno: 15px */
+    border: 8px solid #ccc;/* borda: 8px solida #ccc */
 }
 
-.form h2{
-    font-family: normal;
-    color: #999999;
-    font-size: 21px;
+.form h2{/* classe form elemento h2 */
+    font-weight: normal;/* familina*/
+    color: #999999;/* cor: #9999999 */
+    font-size: 21px;/* tamanho da fonte: 21px */
 }
 
-.input-container{
-    margin-top: 20px;
+.input-container{/* classe input-container */
+    margin-top: 20px;/* margem-superior externa: 20px */
 }
 
-.input-container label,.form p{
-    display: inline-block;
-    width: 100%;
-    font-size: 17px;
-    color: #bbbbbb;
-    padding: 5px;
+.input-container label,.form p{/* classe input-container elemento label, e classe form elemento p */
+    display: inline-block;/* exibicao: block-em-linha*/
+    width: 100%;/* largura: 100% */
+    font-size: 17px;/* tamanho-da-fonte: 17px */
+    color: #bbbbbb;/* cor: #bbbbbbb */
+    padding: 5px;/* espacamento interno: 5px todos os lados */
 }
 
-.form p{
-    margin: 18px 0;
+.form p{/* classe form elemento p*/
+    margin: 18px 0;/* margem externa: 18px vertical(cima/baixo) 0px horizontal(direita/esquerda) */
 }
 
-.input-container input[type=text],input[type=email]{
-    width: 100%;
-    height: 50px;
-    outline: none;
-    border: 1px solid #ccc;
-    padding-left: 6px;
-    color: #bbbbbb;
+.input-container input[type=text],input[type=email]{/* classe input-container elemento entrada[tipo=texto], e elemento entrada[tipo=email] */
+    width: 100%;/* largura: 100% com base na largura do elemento pai */
+    height: 50px;/* altura: 50px */
+    outline: none;/* contorno: nenhum*/
+    border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
+    padding-left: 6px;/* espacamento-esquerdo interno: 6px */
+    color: #bbbbbb;/* cor: #bbbbbb */
 }
 
-.form .submit-button{
-    border: 0;
-    position: relative;
-    /* top: 5px; */
-    left: 50%;
-    transform: translate(-50%);
+.form .submit-button{/* classe form classe botao-enviar*/
+    border: 0;/* borda: 0 */
+    position: relative;/* posicao: relativa */
+    left: 50%;/* esquerda: 50% com base no elemento pai*/
+    transform: translate(-50%);/* transformar: mover(-50% horizontal(direita/esquerda))*/
 }
 
-.form .submit-button input[type=submit]{
-    width: 280px;
-    height: 56px;
-    border: 1px solid #ccc;
-    color: white;
-    background-color: #363A6D;
-    font-size: 25px;
-    cursor: pointer;
+.form .submit-button input[type=submit]{/* classe form classe botao-enviar elemento entrada[tipo=enviar] */
+    width: 280px;/* largura: 280px */
+    height: 56px;/* altura: 56px */
+    border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
+    color: white;/* color: branco */
+    background-color: #363A6D;/* cor-de-fundo: #363A6D */
+    font-size: 25px;/* tamanho da fonte: 25px */
+    cursor: pointer;/* cursor: ponteiro */
 }
 
-.form .submit-button input[type=submit]:hover{
-    background-color: #323665;
+.form .submit-button input[type=submit]:hover{/*  classe form classe botao-enviar elemento entrada[tipo=enviar]:ao flutuar/deslizar */
+    background-color: #323665;/* cor-de-fundo: #323665 */
 }
