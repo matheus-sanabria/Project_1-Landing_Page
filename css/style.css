@@ -10,7 +10,7 @@ html,body{
 }
 
 .center{
-    max-width: 1280px;/* largura-máxima: 1280px; */
+    max-width: 1200px;/* largura-máxima: 1280px; */
     margin: 0 auto;/* margem externa: vertical 0 horizontal automatica */
 }
 
@@ -40,16 +40,36 @@ html,body{
     height: 100%;/* altura: 100% com base na altura elemento pai */
 }
 
+.container__list{
+    float: left;
+    top: 50px;
+    position: relative;
+    width: 619px;
+    height: 278px;
+    padding: 17px 30px 30px 30px ;
+    background-color: rgba(33,35,67,0.7);
+}
+
+.container__list ul{
+    list-style-position: inside;
+}
+
+.container__list ul li{
+    color: white;
+    margin-top: 18px;
+}
+
 .form{/* elemento com a classe form */
     width: 400px;/* largura: 400px  */
-    height: calc(100% + 50px);/* altura: 100% com base na altura elemento pai */
+    height: 100%;/* altura: 100% com base na altura elemento pai */
     background-color: white;/* cor-de-fundo: branco*/
     position: relative;/* posicao: relativa */
-    top: -25px;/* superior: -25px*/
+    top: -29px;/* superior: -25px*/
     float: right;/* flutuação: direita */
     margin-right: 50px;/* margem externa: 50px em todos os lados */
     padding: 15px;/* espaçamento interno: 15px */
-    border: 8px solid #ccc;/* borda: 8px solida #ccc */
+    border: 12px solid rgba(120,120,120,0.5);/* borda: 8px solida #ccc */
+    background-clip: padding-box;
 }
 
 .form h2{/* classe form elemento h2 */
@@ -102,4 +122,35 @@ html,body{
 
 .form .submit-button input[type=submit]:hover{/*  classe form classe botao-enviar elemento entrada[tipo=enviar]:ao flutuar/deslizar */
     background-color: #323665;/* cor-de-fundo: #323665 */
+}
+
+.container__two{
+    height: 275px;
+    padding: 50px 0;
+    background-color:#dddddd;
+    text-align: center;
+}
+
+.container__two h2{
+    margin: 10px 0 10px 0;
+    font-weight: normal;
+}
+
+.container__two p{
+    width: 698px;
+    display: inline-block;
+    margin: 22px 0 15px 0;
+    text-align: justify;
+}
+
+.arrow-down{
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-image: url('../images/arrow.png');
+    position: relative;
+    top: 33px;
+    left: 50%;
+    margin-left: -30px;
+    /* transform: translate(-50%, 80px); */
 }
