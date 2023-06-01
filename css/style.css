@@ -9,9 +9,16 @@ html,body{
     height: 100%;/* altura: 100% */
 }
 
+@font-face{
+    src:url('');
+    font-family: "Open Sans";
+}
+
 .center{
     max-width: 1200px;/* largura-máxima: 1280px; */
+    min-width: 1200px;
     margin: 0 auto;/* margem externa: vertical 0 horizontal automatica */
+    padding: 0 2%;
 }
 
 .clear{
@@ -20,6 +27,7 @@ html,body{
 
 .header{/* seletor de classe = (.); nome da classe = (header); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100%; */
+    min-width: 1200px;
     height: 60px;/* altura: 60px; */
     background-color: #212343;/* cor-de-fundo: valor hexagonal 212343 */
 }
@@ -30,6 +38,7 @@ html,body{
 
 .container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100% com base na largura do elemento pai */ 
+    min-width: 1200px;
     max-height: 470px;/* altura-maxima: 470px */ 
     background-image: url('../images/header_bg.png');/* imagem-de-fundo: url('local da imagem') */ 
     background-size: cover;/* tamanho-de-fundo */ 
@@ -44,10 +53,15 @@ html,body{
     float: left;
     top: 50px;
     position: relative;
-    width: 619px;
-    height: 278px;
+    width: 40%;
     padding: 17px 30px 30px 30px ;
     background-color: rgba(33,35,67,0.7);
+}
+
+@media screen and (max-width:1300px){
+    .container__list{
+        margin-left: 50px;
+    }
 }
 
 .container__list ul{
@@ -129,6 +143,7 @@ html,body{
     padding: 50px 0;
     background-color:#dddddd;
     text-align: center;
+    min-width: 1200px;
 }
 
 .container__two h2{
@@ -153,4 +168,32 @@ html,body{
     left: 50%;
     margin-left: -30px;
     /* transform: translate(-50%, 80px); */
+}
+
+.section-one{
+    padding: 90px 0;
+}
+
+.section-one h2{
+    text-align: center;
+    color:#462663;
+    font-weight: normal;
+}
+
+.section-one__container{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container__single{
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+}
+
+.container__single img{width: 70px;}
+
+.container__single p{
+    text-align: justify;
+    padding: 30px;
 }
