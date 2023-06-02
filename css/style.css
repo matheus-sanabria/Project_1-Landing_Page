@@ -15,10 +15,10 @@ html,body{
 }
 
 .center{
-    max-width: 1200px;/* largura-máxima: 1280px; */
-    min-width: 1200px;
-    margin: 0 auto;/* margem externa: vertical 0 horizontal automatica */
+    width: 100%;
+    max-width: 1280px;
     padding: 0 2%;
+    margin: 0 auto;/* margem externa: vertical 0 horizontal automatica */
 }
 
 .clear{
@@ -27,7 +27,6 @@ html,body{
 
 .header{/* seletor de classe = (.); nome da classe = (header); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100%; */
-    min-width: 1200px;
     height: 60px;/* altura: 60px; */
     background-color: #212343;/* cor-de-fundo: valor hexagonal 212343 */
 }
@@ -38,8 +37,7 @@ html,body{
 
 .container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100% com base na largura do elemento pai */ 
-    min-width: 1200px;
-    max-height: 470px;/* altura-maxima: 470px */ 
+    /* max-height: 470px; */
     background-image: url('../images/header_bg.png');/* imagem-de-fundo: url('local da imagem') */ 
     background-size: cover;/* tamanho-de-fundo */ 
     background-position: center;/* posição-de-fundo */ 
@@ -51,17 +49,12 @@ html,body{
 
 .container__list{
     float: left;
-    top: 50px;
+    top: 60px;
     position: relative;
     width: 40%;
-    padding: 17px 30px 30px 30px ;
+    padding: 3.5%;
+    /* margin: 50px 1% 50px 50px; */
     background-color: rgba(33,35,67,0.7);
-}
-
-@media screen and (max-width:1300px){
-    .container__list{
-        margin-left: 50px;
-    }
 }
 
 .container__list ul{
@@ -72,6 +65,9 @@ html,body{
     color: white;
     margin-top: 18px;
 }
+.container__list ul li:first-child{
+    margin-top: 0;
+}
 
 .form{/* elemento com a classe form */
     width: 400px;/* largura: 400px  */
@@ -80,7 +76,7 @@ html,body{
     position: relative;/* posicao: relativa */
     top: -29px;/* superior: -25px*/
     float: right;/* flutuação: direita */
-    margin-right: 50px;/* margem externa: 50px em todos os lados */
+    /* margin-right: 50px;margem externa: 50px em todos os lados */
     padding: 15px;/* espaçamento interno: 15px */
     border: 12px solid rgba(120,120,120,0.5);/* borda: 8px solida #ccc */
     background-clip: padding-box;
@@ -119,15 +115,19 @@ html,body{
 
 .form .submit-button{/* classe form classe botao-enviar*/
     border: 0;/* borda: 0 */
+    outline: none;
     position: relative;/* posicao: relativa */
     left: 50%;/* esquerda: 50% com base no elemento pai*/
     transform: translate(-50%);/* transformar: mover(-50% horizontal(direita/esquerda))*/
+    width: 80%;
+    border-radius: 50px;
 }
 
 .form .submit-button input[type=submit]{/* classe form classe botao-enviar elemento entrada[tipo=enviar] */
-    width: 280px;/* largura: 280px */
+    width: 100%;/* largura: 280px */
     height: 56px;/* altura: 56px */
     border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
+    border-radius: 50px;
     color: white;/* color: branco */
     background-color: #363A6D;/* cor-de-fundo: #363A6D */
     font-size: 25px;/* tamanho da fonte: 25px */
@@ -139,20 +139,18 @@ html,body{
 }
 
 .container__two{
-    height: 275px;
-    padding: 50px 0;
+    /* height: 275px; */
+    padding: 40px 7%;
     background-color:#dddddd;
     text-align: center;
-    min-width: 1200px;
 }
 
 .container__two h2{
-    margin: 10px 0 10px 0;
+    margin: 20px 0 10px 0;
     font-weight: normal;
 }
-
 .container__two p{
-    width: 698px;
+    /* max-width: 698px; */
     display: inline-block;
     margin: 22px 0 15px 0;
     text-align: justify;
@@ -164,24 +162,25 @@ html,body{
     background-size: 100%;
     background-image: url('../images/arrow.png');
     position: relative;
-    top: 33px;
+    top: 70px;
     left: 50%;
     margin-left: -30px;
     /* transform: translate(-50%, 80px); */
 }
 
 .section-one{
-    padding: 90px 0;
+    padding: 45px 0;
 }
 
 .section-one h2{
     text-align: center;
     color:#462663;
     font-weight: normal;
+    padding: 20px 5% 0 5%;
 }
 
 .section-one__container{
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -197,16 +196,97 @@ html,body{
 
 .container__single p{
     text-align: justify;
-    padding: 30px;
+    padding: 30px 0;
+}
+
+.container__single p:last-child{
+    padding-bottom: 0;
 }
 
 .footer{
-    padding: 30px 0;
     border-top: 4px solid #888888; 
-    padding: 20px 0;
+    padding: 10px 7%;
     text-align: center;
 }
 
 .footer__text{
     margin-top: 8px;
+}
+
+.footer__text:first-child{
+    margin-top: 0px;
+}
+@media screen and (max-width:1024px){
+    .header{
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .header img{
+    margin: 0;
+}
+    .container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
+        height: auto;
+        padding: 50px 2%;
+        text-align: center;
+
+        /* min-width: 470px; */
+    /* min-height: 140.5%;
+    position: relative; */
+    }
+
+    .container__list{
+        float: left;
+        /* width: 40%; */
+        max-width: 500px;
+        height: auto;
+        margin: 0;
+        /*padding: 3.5%;
+        margin: 50px;
+        background-color: rgba(33,35,67,0.7); */
+    }
+
+    .form{/* elemento com a classe form */
+        width: 60%;
+        float: right;
+        max-width: 400px;
+        height: 100%;
+        top: 0;
+        padding: 10px;
+        /* width: 50%;
+        left: 0;
+        top: 0;
+        transform: translate(-50%,0);*/
+        margin: 0 auto 0 auto; 
+    }
+
+    .form .submit-button{
+        left: 0;
+        transform: translate(0);
+        width: 80%;
+    }
+}
+@media screen and (max-width:768px){
+    .container__list{
+        float: none;
+        display: inline-block;
+        width: 90%;
+        top: 0;
+    }
+
+    .form{
+        width: 90%;
+        float: none;
+        display: inline-block;
+        margin-top: 50px;
+    }
+
+    .container__single{
+    float: none;
+    display: inline-block;
+    width: 100%;
+    padding: 20px 7%;
+    }
 }
