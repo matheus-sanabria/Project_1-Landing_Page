@@ -14,6 +14,7 @@ html,body{
     font-family: "Open Sans";
 }
 
+/* starts auxiliary class */
 .center{
     width: 100%;
     max-width: 1280px;
@@ -24,7 +25,9 @@ html,body{
 .clear{
     clear: both;/* limpar: ambos */
 }
+/* ends auxiliary class */
 
+/* starts header class */
 .header{/* seletor de classe = (.); nome da classe = (header); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100%; */
     height: 60px;/* altura: 60px; */
@@ -34,8 +37,10 @@ html,body{
 .header img{/* seletor de classe = (.); nome da classe = (header); nome da tag = (img); sintax de declaracao = ({})*/
     margin: 19px;/* margem externa: 19px em todos os lados */
 }
+/* ends header class */
 
-.container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
+/* starts banner class */
+.banner{/* seletor de classe = (.); nome da classe = (banner); sintax de declaracao = ({})*/
     width: 100%;/* largura: 100% com base na largura do elemento pai */ 
     /* max-height: 470px; */
     background-image: url('../images/header_bg.png');/* imagem-de-fundo: url('local da imagem') */ 
@@ -43,11 +48,11 @@ html,body{
     background-position: center;/* posição-de-fundo */ 
 }
 
-.container-banner > .center{
-    height: 100%;/* altura: 100% com base na altura elemento pai */
-}
+    .banner > .center{
+        height: 100%;/* altura: 100% com base na altura elemento pai */
+    }
 
-.container__list{
+.banner__text{
     float: left;
     top: 60px;
     position: relative;
@@ -57,104 +62,107 @@ html,body{
     background-color: rgba(33,35,67,0.7);
 }
 
-.container__list ul{
-    list-style-position: inside;
-}
+    .banner__text h2{
+        color: white;
+        padding-bottom: 20px;
+    }
 
-.container__list ul li{
-    color: white;
-    margin-top: 18px;
-}
-.container__list ul li:first-child{
-    margin-top: 0;
-}
+    .banner__text p{
+        color: white;
+        padding: 10px 0;
+        text-align: justify;
+    }
 
-.form{/* elemento com a classe form */
-    width: 400px;/* largura: 400px  */
-    height: 100%;/* altura: 100% com base na altura elemento pai */
-    background-color: white;/* cor-de-fundo: branco*/
-    position: relative;/* posicao: relativa */
-    top: -29px;/* superior: -25px*/
-    float: right;/* flutuação: direita */
-    /* margin-right: 50px;margem externa: 50px em todos os lados */
-    padding: 15px;/* espaçamento interno: 15px */
-    border: 12px solid rgba(120,120,120,0.5);/* borda: 8px solida #ccc */
-    background-clip: padding-box;
-}
+    .banner__form{/* elemento com a classe form */
+        width: 400px;/* largura: 400px  */
+        height: 100%;/* altura: 100% com base na altura elemento pai */
+        background-color: white;/* cor-de-fundo: branco*/
+        position: relative;/* posicao: relativa */
+        top: -29px;/* superior: -25px*/
+        float: right;/* flutuação: direita */
+        /* margin-right: 50px;margem externa: 50px em todos os lados */
+        padding: 15px;/* espaçamento interno: 15px */
+        border: 12px solid rgba(120,120,120,0.5);/* borda: 8px solida #ccc */
+        background-clip: padding-box;
+    }
 
-.form h2{/* classe form elemento h2 */
-    font-weight: normal;/* familina*/
-    color: #999999;/* cor: #9999999 */
-    font-size: 21px;/* tamanho da fonte: 21px */
-}
+        .banner__form h2{/* classe form elemento h2 */
+            font-weight: normal;/* familina*/
+            color: #999999;/* cor: #9999999 */
+            font-size: 21px;/* tamanho da fonte: 21px */
+        }
 
-.input-container{/* classe input-container */
-    margin-top: 20px;/* margem-superior externa: 20px */
-}
+            .form__input{/* classe form__input */
+                margin-top: 20px;/* margem-superior externa: 20px */
+            }
 
-.input-container label,.form p{/* classe input-container elemento label, e classe form elemento p */
-    display: inline-block;/* exibicao: block-em-linha*/
-    width: 100%;/* largura: 100% */
-    font-size: 17px;/* tamanho-da-fonte: 17px */
-    color: #bbbbbb;/* cor: #bbbbbbb */
-    padding: 5px;/* espacamento interno: 5px todos os lados */
-}
+                .form__input label{/* classe form__input elemento label */
+                    display: inline-block;/* exibicao: block-em-linha*/
+                    width: 100%;/* largura: 100% */
+                    font-size: 17px;/* tamanho-da-fonte: 17px */
+                    color: #bbbbbb;/* cor: #bbbbbbb */
+                    padding: 5px;/* espacamento interno: 5px todos os lados */
+                }
+                
+                .form__input input[type=text],input[type=email]{/* classe form__input elemento entrada[tipo=texto], e elemento entrada[tipo=email] */
+                    width: 100%;/* largura: 100% com base na largura do elemento pai */
+                    height: 50px;/* altura: 50px */
+                    outline: none;/* contorno: nenhum*/
+                    border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
+                    padding-left: 6px;/* espacamento-esquerdo interno: 6px */
+                    color: #bbbbbb;/* cor: #bbbbbb */
+                }
+                
+            .banner__form p{/* classe form elemento p*/
+                font-size: 17px;/* tamanho-da-fonte: 17px */
+                margin: 18px 0;/* margem externa: 18px vertical(cima/baixo) 0px horizontal(direita/esquerda) */
+            }
 
-.form p{/* classe form elemento p*/
-    margin: 18px 0;/* margem externa: 18px vertical(cima/baixo) 0px horizontal(direita/esquerda) */
-}
 
-.input-container input[type=text],input[type=email]{/* classe input-container elemento entrada[tipo=texto], e elemento entrada[tipo=email] */
-    width: 100%;/* largura: 100% com base na largura do elemento pai */
-    height: 50px;/* altura: 50px */
-    outline: none;/* contorno: nenhum*/
-    border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
-    padding-left: 6px;/* espacamento-esquerdo interno: 6px */
-    color: #bbbbbb;/* cor: #bbbbbb */
-}
+            .banner__form .form__submit-button{/* classe form classe botao-enviar*/
+                border: 0;/* borda: 0 */
+                outline: none;
+                position: relative;/* posicao: relativa */
+                left: 50%;/* esquerda: 50% com base no elemento pai*/
+                transform: translate(-50%);/* transformar: mover(-50% horizontal(direita/esquerda))*/
+                width: 80%;
+                border-radius: 50px;
+            }
 
-.form .submit-button{/* classe form classe botao-enviar*/
-    border: 0;/* borda: 0 */
-    outline: none;
-    position: relative;/* posicao: relativa */
-    left: 50%;/* esquerda: 50% com base no elemento pai*/
-    transform: translate(-50%);/* transformar: mover(-50% horizontal(direita/esquerda))*/
-    width: 80%;
-    border-radius: 50px;
-}
+            .banner__form form .form__submit-button input[type=submit]{/* classe form classe botao-enviar elemento entrada[tipo=enviar] */
+                width: 100%;/* largura: 280px */
+                height: 56px;/* altura: 56px */
+                border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
+                border-radius: 50px;
+                color: white;/* color: branco */
+                background-color: #363A6D;/* cor-de-fundo: #363A6D */
+                font-size: 25px;/* tamanho da fonte: 25px */
+                cursor: pointer;/* cursor: ponteiro */
+            }
 
-.form .submit-button input[type=submit]{/* classe form classe botao-enviar elemento entrada[tipo=enviar] */
-    width: 100%;/* largura: 280px */
-    height: 56px;/* altura: 56px */
-    border: 1px solid #ccc;/* borda: 1px solida cor #ccc */
-    border-radius: 50px;
-    color: white;/* color: branco */
-    background-color: #363A6D;/* cor-de-fundo: #363A6D */
-    font-size: 25px;/* tamanho da fonte: 25px */
-    cursor: pointer;/* cursor: ponteiro */
-}
+            .banner__form .form__submit-button input[type=submit]:hover{/*  classe form classe botao-enviar elemento entrada[tipo=enviar]:ao flutuar/deslizar */
+                background-color: #323665;/* cor-de-fundo: #323665 */
+            }
+/* ends banner class */
 
-.form .submit-button input[type=submit]:hover{/*  classe form classe botao-enviar elemento entrada[tipo=enviar]:ao flutuar/deslizar */
-    background-color: #323665;/* cor-de-fundo: #323665 */
-}
-
-.container__two{
+/* starts text-container class */
+.text-container{
     /* height: 275px; */
-    padding: 40px 7%;
+    padding: 40px 25%;
     background-color:#dddddd;
     text-align: center;
 }
 
-.container__two h2{
-    margin: 20px 0 10px 0;
-    font-weight: normal;
-}
-.container__two p{
-    /* max-width: 698px; */
-    display: inline-block;
-    margin: 22px 0 15px 0;
-    text-align: justify;
-}
+    .text-container h2{
+        margin: 20px 0 10px 0;
+        font-weight: normal;
+    }
+    .text-container p{
+        /* max-width: 698px; */
+        display: inline-block;
+        margin-top: 10px;
+        /* text-align: justify; */
+    }
 
 .arrow-down{
     width: 60px;
@@ -167,55 +175,83 @@ html,body{
     margin-left: -30px;
     /* transform: translate(-50%, 80px); */
 }
+/* ends text-container class */
 
+/* starts section-one class */
 .section-one{
-    padding: 45px 0;
+    padding: 40px 0;
 }
 
-.section-one h2{
-    text-align: center;
-    color:#462663;
-    font-weight: normal;
-    padding: 20px 5% 0 5%;
+    .section-one h2{
+        text-align: center;
+        color:#462663;
+        font-weight: normal;
+        padding: 20px 0;
+    }
+
+    .section-one__differentials{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+        .differentials__single{
+            float: left;
+            width: 33%;
+            padding: 30px;
+            height: 304px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .differentials__single__img{
+            display: flex;
+            justify-content: center;
+        }
+
+            .differentials__single img{
+                width: 70px;
+            }
+
+
+        .differentials__single__text p{
+            text-align: justify;
+            /* padding: 30px 0; */
+        }
+/* ends section-one class */
+
+.section-two{
+    padding: 40px 0;
+    background-color: rgb(221, 221, 221);
 }
 
-.section-one__container{
-    margin-top: 20px;
-    text-align: center;
-}
+    .section-two h2{
+        text-align: center;
+        color:#462663;
+        font-weight: normal;
+        padding: 20px 0;
+    }
 
-.container__single{
-    float: left;
-    /* display: inline-block;
-    margin-right: -4px; */
-    width: 33.33%;
-    padding: 30px;
-}
 
-.container__single img{width: 70px;}
-
-.container__single p{
-    text-align: justify;
-    padding: 30px 0;
-}
-
-.container__single p:last-child{
-    padding-bottom: 0;
-}
-
+/* starts footer class */
 .footer{
     border-top: 4px solid #888888; 
     padding: 10px 7%;
     text-align: center;
 }
 
-.footer__text{
-    margin-top: 8px;
-}
+    .footer__text{
+        margin-top: 8px;
+    }
 
-.footer__text:first-child{
-    margin-top: 0px;
-}
+        .footer__text:first-child{
+            margin-top: 0px;
+        }
+/* ends footer class */
+
+/* starts 1024px responsive design  */
 @media screen and (max-width:1024px){
     .header{
         width: 100%;
@@ -224,69 +260,75 @@ html,body{
         text-align: center;
     }
 
-    .header img{
-    margin: 0;
-}
-    .container-banner{/* seletor de classe = (.); nome da classe = (container-banner); sintax de declaracao = ({})*/
+        .header img{
+            margin: 0;
+        }
+
+    .banner{/* seletor de classe = (.); nome da classe = (banner); sintax de declaracao = ({})*/
         height: auto;
         padding: 50px 2%;
         text-align: center;
 
         /* min-width: 470px; */
-    /* min-height: 140.5%;
-    position: relative; */
-    }
+        /* min-height: 140.5%;
+        position: relative; */
+        }
 
-    .container__list{
-        float: left;
-        /* width: 40%; */
-        max-width: 500px;
-        height: auto;
-        margin: 0;
-        /*padding: 3.5%;
-        margin: 50px;
-        background-color: rgba(33,35,67,0.7); */
-    }
+        .banner__text{
+            float: left;
+            /* width: 40%; */
+            max-width: 500px;
+            height: auto;
+            margin: 0;
+            /*padding: 3.5%;
+            margin: 50px;
+            background-color: rgba(33,35,67,0.7); */
+        }
 
-    .form{/* elemento com a classe form */
-        width: 60%;
-        float: right;
-        max-width: 400px;
-        height: 100%;
-        top: 0;
-        padding: 10px;
-        /* width: 50%;
-        left: 0;
-        top: 0;
-        transform: translate(-50%,0);*/
-        margin: 0 auto 0 auto; 
-    }
+        .banner__form{/* elemento com a classe form */
+            width: 60%;
+            float: right;
+            max-width: 400px;
+            height: 100%;
+            top: 0;
+            padding: 10px;
+            /* width: 50%;
+            left: 0;
+            top: 0;
+            transform: translate(-50%,0);*/
+            margin: 0 auto 0 auto; 
+        }
 
-    .form .submit-button{
-        left: 0;
-        transform: translate(0);
-        width: 80%;
-    }
+            .banner__form .form__submit-button{
+                left: 0;
+                transform: translate(0);
+                width: 80%;
+            }
+
 }
+/* ends 1024px responsive design  */
+
+/* starts 768px responsive design  */
 @media screen and (max-width:768px){
-    .container__list{
+    .banner__text{
         float: none;
         display: inline-block;
         width: 90%;
         top: 0;
     }
 
-    .form{
+    .banner__form{
         width: 90%;
         float: none;
         display: inline-block;
         margin-top: 50px;
     }
 
-    .container__single{
+    .differentials__single{
     float: none;
     display: inline-block;
     width: 100%;
     padding: 20px 7%;
     }
 }
+/* ends 768px responsive design  */

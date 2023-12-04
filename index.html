@@ -1,106 +1,157 @@
 <!-- ! = Emmet Abreviation -->
-<!DOCTYPE html><!-- Tipo de documento html-->
-<html lang="pt-br"><!-- abre html, atributo de idioma="portuugues-brasil"-->
-<head><!-- abre cabeça -->
-    <meta charset="UTF-8"><!-- metadado de conjunto de caracteres -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- metadado de compatibilidade com navegador IE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- metadado de exibição em outros dispositivos -->
-    <link rel="stylesheet" href="./css/style.css" type="text/css"><!-- link para planilha de estilos css-->
-    <!-- links para google fonts -->
+<!DOCTYPE html><!-- html Document type -->
+<html lang="pt-br"><!-- open html, language attribute = "Portuguese-Brazilian" -->
+<head><!-- opens head -->
+    <meta charset="UTF-8"><!-- metadata to define character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IE browser compatibility metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- metadata to adjust the display on other devices -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css"><!-- link to css file-->
+
+    <!-- starts links to Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- ends links to Google fonts -->
+
+    <title>Project 1 - Landing Page</title><!-- tab title -->
+</head><!-- closes head -->
+<body><!-- opens body -->
+    <div class="header"><!-- opens header -->
+        <div class="center"><!-- opens center -->
+            <img src="./images/logo.png" alt=""><!-- image -->
+        </div><!-- ends center -->
+    </div><!-- closes header -->
     
-    <title>Document</title><!-- titulo da aba -->
-</head><!-- fecha cabeça -->
-<body><!-- abre corpo -->
-    <div class="header"><!-- abre divisão; classe cabecalho; -->
-        <div class="center"><!-- abre divisão; classe centro; -->
-            <img src="./images/logo.png" alt=""><!-- imagem -->
-        </div><!-- fecha centro -->
-    </div><!-- fecha cabecalho -->
-    
-    <div class="container-banner"><!-- abre div classe container-banner -->
-        <div class="center"><!-- abre div center -->
+    <div class="banner"><!-- opens banner -->
+        <div class="center"><!-- opens center -->
             <div>
-                <div class="container__list">
-                    <ul>
-                        <li>In esse est commodo reprehenderit magna irure irure Lorem nulla consectetur ut veniam laboris elit.</li>
-                        <li>In esse est commodo reprehenderit magna irure irure Lorem nulla consectetur ut veniam laboris elit.</li>
-                        <li>In esse est commodo reprehenderit magna irure irure Lorem nulla consectetur ut veniam laboris elit.</li>
-                        <li>In esse est commodo reprehenderit magna irure irure Lorem nulla consectetur ut veniam laboris elit.</li>
-                    </ul>
-                </div><!-- container__list -->
+                <div class="banner__text">
+                    <h2>Transforme Ideias em Inovação Digital</h2>
+                    <p>Sua Visão, Nossa Tecnologia, Resultados Surpreendentes</p>
+                    <p>Abordamos cada projeto com uma paixão incansável pela inovação. Trabalhamos em estreita colaboração com você, aproveitando as mais recentes tecnologias para criar soluções que se destacam.</p>
+                </div><!-- banner__list -->
             </div>
             <div>
-                <div class="form"><!-- abre div form -->
-                    <h2>Fill out the form and start your journey to becoming a webmaster</h2><!-- titulo de cabeçalho de 2° hierarquia -->
+                <div class="banner__form">
+                    <h2>Estamos prontos para ouvir sua visão e transformá-la em realidade. Entre em contato agora para começar.</h2><!-- heading_2 -->
                     <form action="">
-                        <div class="input-container">
-                            <label for="">Name*</label><!-- rotulo -->
-                            <input type="text" name="name" placeholder="Insert your full name..." required><!-- entrada; tipo="texto"; nome="nome"; mensagemExibição="Insira seu nome completo..." -->
-                        </div><!-- recepiente de entrada -->
+                        <div class="form__input">
+                            <label for="">Name*</label><!-- name label -->
+                            <input type="text" name="name" placeholder="Insert your full name..." required><!-- text input field -->
+                        </div><!-- ends form__input -->
 
-                        <div class="input-container">
-                            <label for="">E-mail*</label><!-- rotulo -->
-                            <input type="email" name="email" placeholder="Insert your e-mail..." required><!-- entrada; tipo="email"; nome="emaik"; mensagemExibição="Insira seu e-mail..." -->
-                        </div><!-- recepiente de entrada -->
+                        <div class="form__input">
+                            <label for="">E-mail*</label><!-- email label -->
+                            <input type="email" name="email" placeholder="Insert your e-mail..." required><!-- email input field -->
+                        </div><!-- ends form__input -->
 
-                        <div class="input-container">
-                            <label for="">Phone*</label><!-- rotulo -->
-                            <input type="text" name="phone" placeholder="Insert your phone number..." required><!-- entrada; tipo="texto"; nome="nome"; mensagemExibição="Insira seu nome completo..." -->
-                        </div><!-- recepiente de entrada -->
+                        <div class="form__input">
+                            <label for="">Phone*</label><!-- phone label -->
+                            <input type="text" name="phone" placeholder="Insert your phone number..." required><!-- text input field -->
+                        </div><!-- ends form__input -->
 
-                        <p class="warning">*Required fields</p><!-- cuidado -->
+                        <p class="warning">*Required fields</p><!-- warning -->
 
-                        <button class="submit-button">
-                            <input type="submit" name="acao" value="Send!"><!-- entrada; tipo="enviaro"; nome="ação"; valor="Enviar!" -->
-                        </button><!-- botao de envio -->
+                        <button class="form__submit-button">
+                            <input type="submit" name="acao" value="Send!"><!-- submit input field -->
+                        </button><!-- form__submit-button -->
                     </form>
-                </div><!-- fecha div form -->
+                </div><!-- ends banner__form -->
             </div>
             <div class="clear"></div><!-- limpar flutuação -->
         </div><!-- fecha div center -->
-    </div><!-- fecha div container-banner -->
-    <div class="container__two">
+    </div><!-- closes banner -->
+
+    <div class="text-container">
         <div class="center">
-            <h2>Lorem Ipsum</h2>
-            <p>Anim sit minim incididunt sunt reprehenderit laboris dolore. Pariatur adipisicing dolor pariatur et culpa et ullamco voluptate labore excepteur. Ut proident cillum sit elit laboris nostrud cillum. Consequat sit cillum ea sit tempor ipsum nostrud. Esse amet elit cillum ut labore irure cillum veniam ut tempor voluptate. Ea laboris minim est sit pariatur ad aute. Adipisicing ex ex ad voluptate.</p>
+            <h2>Quem Somos</h2>
+            <p>Somos uma equipe de mentes inovadoras apaixonadas por tecnologia. Fundamos nossa empresa durante nossos estudos em Information Systems e cursos técnicos, e desde então, estamos comprometidos em oferecer soluções digitais excepcionais.</p>
         </div><!-- center -->
         <div class="arrow-down"></div><!-- arrow-down -->
-    </div><!-- fecha container__two -->
+    </div><!-- fecha__two -->
+
     <div class="section-one">
         <div class="center">
-            <h2>Aprenda com quem está no mercado</h2>
-            <div class="section-one__container">
-                <div class="container__single">
-                    <div><img src="./images/icon.png" alt="Icone"></div>
-                    <div class="container__text-single">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Eiusmod ea dolor ipsum duis laboris voluptate minim nisi enim nostrud excepteur culpa aliqua. Ullamco excepteur mollit sunt laboris sint irure ut est cupidatat non quis excepteur. Ullamco fugiat anim ipsum aliqua dolore nisi. Aliquip cillum adipisicing labore dolore.</p>
-                    </div><!-- container__text-single -->
-                </div><!-- container__single-->
-                <div class="container__single">
-                    <div><img src="./images/icon.png" alt="Icone"></div>
-                    <div class="container__text-single">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Eiusmod ea dolor ipsum duis laboris voluptate minim nisi enim nostrud excepteur culpa aliqua. Ullamco excepteur mollit sunt laboris sint irure ut est cupidatat non quis excepteur. Ullamco fugiat anim ipsum aliqua dolore nisi. Aliquip cillum adipisicing labore dolore.</p>
-                    </div><!-- container__text-single -->
-                </div><!-- container__single-->
-                <div class="container__single">
-                    <div><img src="./images/icon.png" alt="Icone"></div>
-                    <div class="container__text-single">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Eiusmod ea dolor ipsum duis laboris voluptate minim nisi enim nostrud excepteur culpa aliqua. Ullamco excepteur mollit sunt laboris sint irure ut est cupidatat non quis excepteur. Ullamco fugiat anim ipsum aliqua dolore nisi. Aliquip cillum adipisicing labore dolore.</p>
-                    </div><!-- container__text-single -->
-                </div><!-- container__single-->
-                <div class="clear"></div>
-            </div><!-- section-one__container -->
+            <h2>Nossos Serviços</h2><!-- heading_2 -->
+            <div class="section-one_differentials">
+                <div class="differentials__single">
+                    <div class="differentials__single__img">
+                        <img src="./images/icon.png" alt="Icone">
+                    </div><!-- differentials__single__img -->
+                    <div class="differentials__single__text">
+                        <h2>Desenvolvimento de Apps:</h2>
+                        <p>Desenvolvemos Apps que conquistam o mercado, combinando design elegante com funcionalidades de ponta.</p>
+                    </div><!-- differentials__single__text -->
+                </div><!-- differentials__single -->
+
+                <div class="differentials__single">
+                    <div class="differentials__single__img">
+                        <img src="./images/icon.png" alt="Icone">
+                    </div><!-- differentials__single__img -->
+                    <div class="differentials__single__text">
+                        <h2>Desenvolvimento de WebApps</h2>
+                        <p>Nossas WebApps são feitas sob medida, proporcionando experiências incríveis aos usuários em qualquer dispositivo.</p>
+                    </div><!-- differentials__single__text -->
+                </div><!-- differentials__single -->
+
+                <div class="differentials__single">
+                    <div class="differentials__single__img">
+                        <img src="./images/icon.png" alt="Icone">
+                    </div><!-- differentials__single__img -->
+                    <div class="differentials__single__text">
+                        <h2>Sistemas Personalizados:</h2>
+                        <p>Criamos sistemas personalizados que se encaixam perfeitamente nas suas necessidades, impulsionando a eficiência e os resultados.</p>
+                    </div><!-- differentials__single__text -->
+                </div><!-- differentials__single -->
+                <div class="clear"></div><!-- clear -->
+
+            </div><!-- section-one_differentials -->
         </div><!-- center -->
+        <div class="arrow-down"></div><!-- arrow-down -->
     </div><!-- section-one -->
+
+    <div class="section-two">
+        <div class="center">
+            <h2>Por que Escolher a Nossa Empresa</h2><!-- heading_2 -->
+            <div class="section-one_differentials">
+                <div class="differentials__single">
+                    <div class="differentials__single__img">
+                        <img src="./images/icon.png" alt="Icone">
+                    </div><!-- differentials__single__img -->
+                    <div class="differentials__single__text">
+                        <h2>Equipe Qualificada</h2>
+                        <p>Nossa equipe é formada por especialistas em Information Systems e especialistas em segurança cibernética, garantindo qualidade e segurança.</p>
+                    </div><!-- differentials__single__text -->
+                </div><!-- differentials__single -->
+
+                <div class="differentials__single">
+                    <div class="differentials__single__img">
+                        <img src="./images/icon.png" alt="Icone">
+                    </div><!-- differentials__single__img -->
+                    <div class="differentials__single__text">
+                        <h2>Compromisso com a Segurança</h2>
+                        <p>Proteger seus dados é nossa prioridade. Incorporamos as mais rigorosas medidas de segurança em cada projeto.</p>
+                    </div><!-- differentials__single__text -->
+                </div><!-- differentials__single -->
+
+                <div class="differentials__single">
+                    <div class="differentials__single__img">
+                        <img src="./images/icon.png" alt="Icone">
+                    </div><!-- differentials__single__img -->
+                    <div class="differentials__single__text">
+                        <h2>Soluções Completas</h2>
+                        <p>Do conceito à entrega e manutenção contínua, oferecemos soluções completas para seu sucesso digital.</p>
+                    </div><!-- differentials__single__text -->
+                </div><!-- differentials__single -->
+
+                <div class="clear"></div><!-- clear -->
+            </div><!-- section-one_differentials -->
+        </div><!-- center -->
+    </div><!-- section-two -->
+
     <footer class="footer">
-        <p class="footer__text">Todos os direitos reservados</p><!-- /.footer__text -->
-        <p class="footer__text">Rua Antenor Lemos, nº 585, Gravatai RS</p><!-- /.footer__text -->
-    </footer><!-- /.footer -->
-</body><!-- fecha corpo -->
-</html><!-- fecha html -->
+        <p class="footer__text">Todos os direitos reservados</p><!-- footer__text -->
+        <p class="footer__text">Rua Antenor Lemos, nº 585, Gravatai RS</p><!-- footer__text -->
+    </footer><!-- footer -->
+</body><!-- ends body -->
+</html><!-- ends html -->
