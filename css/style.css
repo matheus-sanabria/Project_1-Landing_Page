@@ -140,9 +140,7 @@ section{
     width: 160px;
     height: 40px;
     font-size: 16px;
-    position: absolute;
-    right: 20px;
-    top: 9px;
+
     outline: none;
     background-color: transparent;
     color: white;
@@ -173,10 +171,15 @@ section{
     display: flex;
 }
 
+.header .center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header h1{
     font-size: 22px; 
     color: white;
-    display: inline-block;
 }
 
 .header h1 strong{
@@ -403,18 +406,11 @@ footer.footer   {
 /* ends 768px responsive design  */
 
 /* starts 768px responsive design  */
-@media screen and (max-width:700px){
-    .header{
-        height: 97px;
-        align-items: start;
+@media screen and (max-width:440px){
+    .header .center{
+        flex-direction: column;
+        gap: 15px;
     }
-
-    .language-select{
-    left: 50%;
-    transform: translate(-50%);
-    top: 47px!important;
-    }  
-
 }
 
 @media screen and (max-width:360px){
