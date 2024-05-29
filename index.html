@@ -1,157 +1,202 @@
-<!-- ! = Emmet Abreviation -->
-<!DOCTYPE html><!-- html Document type -->
-<html lang="pt-br"><!-- open html, language attribute = "Portuguese-Brazilian" -->
-<head><!-- opens head -->
-    <meta charset="UTF-8"><!-- metadata to define character set -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IE browser compatibility metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- metadata to adjust the display on other devices -->
-    <link rel="stylesheet" href="./css/style.css" type="text/css"><!-- link to css file-->
-
-    <!-- starts links to Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- ends links to Google fonts -->
-
-    <title>Project 1 - Landing Page</title><!-- tab title -->
-</head><!-- closes head -->
-<body><!-- opens body -->
-    <div class="header"><!-- opens header -->
-        <div class="center"><!-- opens center -->
-            <img src="./images/logo.png" alt=""><!-- image -->
-        </div><!-- ends center -->
-    </div><!-- closes header -->
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Garante compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define o comportamento da viewport em dispositivos móveis -->
+    <meta name="description" content="Transforme ideias em negócios com tecnologia de ponta. Oferecemos desenvolvimento de aplicativos, web apps e sistemas personalizados."> <!-- Descrição da página para SEO -->
+    <meta name="keywords" content="desenvolvimento de aplicativos, desenvolvimento web, sistemas personalizados, tecnologia, inovação"> <!-- Palavras-chave para SEO -->
+    <meta name="author" content="Codificadores de Negocios"> <!-- Autor do site -->
     
-    <div class="banner"><!-- opens banner -->
-        <div class="center"><!-- opens center -->
-            <div>
-                <div class="banner__text">
-                    <h2>Transforme Ideias em Inovação Digital</h2>
-                    <p>Sua Visão, Nossa Tecnologia, Resultados Surpreendentes</p>
-                    <p>Abordamos cada projeto com uma paixão incansável pela inovação. Trabalhamos em estreita colaboração com você, aproveitando as mais recentes tecnologias para criar soluções que se destacam.</p>
-                </div><!-- banner__list -->
+    <!-- Meta tags Open Graph para melhor compartilhamento nas redes sociais -->
+    <meta property="og:title" content="Transforme Ideias em Negócios | Codificadores de Negócios">
+    <meta property="og:description" content="Transforme ideias em negócios com tecnologia de ponta. Oferecemos desenvolvimento de aplicativos, web apps e sistemas personalizados.">
+    <meta property="og:image" content="./images/your-image.jpg">
+    <meta property="og:url" content="http://www.codificadoresdenegocios.com">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="./css/style.css" type="text/css"> <!-- Link para o arquivo CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconexão para otimizar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconexão com permissão de origem cruzada para fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- Link para a fonte Montserrat do Google Fonts -->
+    <script src="https://kit.fontawesome.com/b576bb0203.js" crossorigin="anonymous"></script> <!-- Link para o FontAwesome para ícones -->
+    <title>Transforme Ideias em Negócios | Codificadores de Negócios</title> <!-- Título da página -->
+</head>
+<body>
+    <!-- Barra de Progresso -->
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress" id="progress"></div> <!-- Barra de progresso -->
+    </div>
+
+    <!-- Navegação para seleção de idioma -->
+    <nav>
+        <select id="languageSelect" class="language-select" aria-label="Seleção de Idioma">
+            <!-- Opções de idioma com bandeiras -->
+            <option value="pt-br" data-image="./images/br-flag.png" alt="Bandeira do Brasil">Português</option>
+            <option value="en-us" data-image="./images/us-flag.png" alt="Bandeira dos EUA">English</option>
+        </select>
+    </nav>
+
+    <!-- Cabeçalho do site -->
+    <header class="header">
+        <div class="center">
+            <h1><strong>/</strong>Codificadores<strong>-</strong>de<strong>-</strong>negocios<strong>/</strong></h1> <!-- Título do site -->
+        </div>
+    </header>
+
+    <!-- Seção de banner principal -->
+    <section role="banner" class="banner">
+        <div class="center">
+            <div class="banner__text">
+                <h1 id="title">Transforme Ideias em Negócios</h1> <!-- Título do banner -->
+                <p id="description">Sua Visão, Nossa Tecnologia, Resultados Surpreendentes</p> <!-- Descrição do banner -->
+                <p id="intro">Abordamos cada projeto com uma paixão incansável pela inovação. Trabalhamos em estreita colaboração com você, aproveitando as mais recentes tecnologias para criar soluções que se destacam.</p> <!-- Texto introdutório -->
             </div>
-            <div>
-                <div class="banner__form">
-                    <h2>Estamos prontos para ouvir sua visão e transformá-la em realidade. Entre em contato agora para começar.</h2><!-- heading_2 -->
-                    <form action="">
-                        <div class="form__input">
-                            <label for="">Name*</label><!-- name label -->
-                            <input type="text" name="name" placeholder="Insert your full name..." required><!-- text input field -->
-                        </div><!-- ends form__input -->
-
-                        <div class="form__input">
-                            <label for="">E-mail*</label><!-- email label -->
-                            <input type="email" name="email" placeholder="Insert your e-mail..." required><!-- email input field -->
-                        </div><!-- ends form__input -->
-
-                        <div class="form__input">
-                            <label for="">Phone*</label><!-- phone label -->
-                            <input type="text" name="phone" placeholder="Insert your phone number..." required><!-- text input field -->
-                        </div><!-- ends form__input -->
-
-                        <p class="warning">*Required fields</p><!-- warning -->
-
-                        <button class="form__submit-button">
-                            <input type="submit" name="acao" value="Send!"><!-- submit input field -->
-                        </button><!-- form__submit-button -->
-                    </form>
-                </div><!-- ends banner__form -->
+            <div class="banner__form">
+                <h2 id="contact">Estamos prontos para ouvir sua visão e transformá-la em realidade. Entre em contato agora para começar.</h2> <!-- Convite para contato -->
+                <form action="">
+                    <div class="form__input">
+                        <label for="name" id="form_name">Nome</label> <!-- Rótulo para o campo de nome -->
+                        <input type="text" id="name" name="name" 
+                            placeholder="Digite seu nome completo" 
+                            required aria-label="Nome Completo"
+                            data-placeholder-pt-br="Digite seu nome completo" 
+                            data-placeholder-en-us="Enter your full name"> <!-- Campo de entrada para nome -->
+                    </div>
+                    <div class="form__input">
+                        <label for="email" id="form_email">E-mail</label> <!-- Rótulo para o campo de e-mail -->
+                        <input type="email" id="email" name="email" 
+                            placeholder="Digite seu e-mail" 
+                            required aria-label="E-mail"
+                            data-placeholder-pt-br="Digite seu e-mail" 
+                            data-placeholder-en-us="Enter your email"> <!-- Campo de entrada para e-mail -->
+                    </div>
+                    <div class="form__input">
+                        <label for="phone" id="form_phone">Telefone</label> <!-- Rótulo para o campo de telefone -->
+                        <input type="tel" id="phone" name="phone" 
+                            placeholder="Digite seu número de telefone" 
+                            required aria-label="Telefone"
+                            data-placeholder-pt-br="Digite seu número de telefone" 
+                            data-placeholder-en-us="Enter your phone number"> <!-- Campo de entrada para telefone -->
+                    </div>
+                    
+                    <button class="form__submit-button">
+                        <input type="submit" name="acao" id="form_submit" value="Enviar"> <!-- Botão de envio -->
+                    </button>
+                </form>
             </div>
-            <div class="clear"></div><!-- limpar flutuação -->
-        </div><!-- fecha div center -->
-    </div><!-- closes banner -->
+            <div class="clear"></div>
+        </div>
+    </section>
 
-    <div class="text-container">
+    <!-- Seção "Quem Somos" -->
+    <section class="section-one">
         <div class="center">
-            <h2>Quem Somos</h2>
-            <p>Somos uma equipe de mentes inovadoras apaixonadas por tecnologia. Fundamos nossa empresa durante nossos estudos em Information Systems e cursos técnicos, e desde então, estamos comprometidos em oferecer soluções digitais excepcionais.</p>
-        </div><!-- center -->
-        <div class="arrow-down"></div><!-- arrow-down -->
-    </div><!-- fecha__two -->
+            <h2 class="section__title" id="who_we_are">Quem Somos</h2> <!-- Título da seção -->
+            <p id="who_we_are_text">Somos uma equipe de mentes inovadoras apaixonadas por tecnologia. Fundamos nossa empresa durante nossos estudos em Sistemas de Informação e cursos técnicos, e desde então, estamos comprometidos em oferecer soluções digitais excepcionais.</p> <!-- Texto sobre a empresa -->
+        </div>
+        <div class="arrow-down"></div> <!-- Ícone de seta para baixo -->
+    </section>
 
-    <div class="section-one">
+    <!-- Seção "Nossos Serviços" -->
+    <section class="section-two">
         <div class="center">
-            <h2>Nossos Serviços</h2><!-- heading_2 -->
-            <div class="section-one_differentials">
-                <div class="differentials__single">
-                    <div class="differentials__single__img">
-                        <img src="./images/icon.png" alt="Icone">
-                    </div><!-- differentials__single__img -->
-                    <div class="differentials__single__text">
-                        <h2>Desenvolvimento de Apps:</h2>
-                        <p>Desenvolvemos Apps que conquistam o mercado, combinando design elegante com funcionalidades de ponta.</p>
-                    </div><!-- differentials__single__text -->
-                </div><!-- differentials__single -->
+            <h2 class="section__title" id="services">Nossos Serviços</h2> <!-- Título da seção -->
+            
+            <div class="section-differentials">
 
                 <div class="differentials__single">
-                    <div class="differentials__single__img">
-                        <img src="./images/icon.png" alt="Icone">
-                    </div><!-- differentials__single__img -->
+                    <h3 class="icon">
+                        <i class="fa-solid fa-mobile-alt"></i> <!-- Ícone de aplicativo -->
+                    </h3>
+
                     <div class="differentials__single__text">
-                        <h2>Desenvolvimento de WebApps</h2>
-                        <p>Nossas WebApps são feitas sob medida, proporcionando experiências incríveis aos usuários em qualquer dispositivo.</p>
-                    </div><!-- differentials__single__text -->
-                </div><!-- differentials__single -->
+                        <h3 id="service_1">Desenvolvimento de Aplicativos</h3> <!-- Título do serviço -->
+                        <p id="service_1_desc">Desenvolvemos aplicativos que conquistam o mercado, combinando design elegante com funcionalidades de ponta.</p> <!-- Descrição do serviço -->
+                    </div>
+                </div>
+                
+                <div class="differentials__single">
+                    <h3 class="icon">
+                        <i class="fa-solid fa-laptop-code"></i> <!-- Ícone de web app -->
+                    </h3>
+
+                    <div class="differentials__single__text">
+                        <h3 id="service_2">Desenvolvimento de WebApps</h3> <!-- Título do serviço -->
+                        <p id="service_2_desc">Nossas WebApps são feitas sob medida, proporcionando experiências incríveis aos usuários em qualquer dispositivo.</p> <!-- Descrição do serviço -->
+                    </div>
+                </div>
 
                 <div class="differentials__single">
-                    <div class="differentials__single__img">
-                        <img src="./images/icon.png" alt="Icone">
-                    </div><!-- differentials__single__img -->
+                    <h3 class="icon">
+                        <i class="fa-solid fa-network-wired"></i> <!-- Ícone de sistema personalizado -->
+                    </h3>
+
                     <div class="differentials__single__text">
-                        <h2>Sistemas Personalizados:</h2>
-                        <p>Criamos sistemas personalizados que se encaixam perfeitamente nas suas necessidades, impulsionando a eficiência e os resultados.</p>
-                    </div><!-- differentials__single__text -->
-                </div><!-- differentials__single -->
-                <div class="clear"></div><!-- clear -->
+                        <h3 id="service_3">Sistemas Personalizados</h3> <!-- Título do serviço -->
+                        <p id="service_3_desc">Criamos sistemas personalizados que se encaixam perfeitamente nas suas necessidades, impulsionando a eficiência e os resultados.</p> <!-- Descrição do serviço -->
+                    </div>
+                </div>
 
-            </div><!-- section-one_differentials -->
-        </div><!-- center -->
-        <div class="arrow-down"></div><!-- arrow-down -->
-    </div><!-- section-one -->
+            </div>
+        </div>
+        
+        <div class="arrow-down"></div> <!-- Ícone de seta para baixo -->
+    </section>
 
-    <div class="section-two">
+    <!-- Seção "Por que Escolher a Nossa Empresa?" -->
+    <section class="section-three">
         <div class="center">
-            <h2>Por que Escolher a Nossa Empresa</h2><!-- heading_2 -->
-            <div class="section-one_differentials">
-                <div class="differentials__single">
-                    <div class="differentials__single__img">
-                        <img src="./images/icon.png" alt="Icone">
-                    </div><!-- differentials__single__img -->
-                    <div class="differentials__single__text">
-                        <h2>Equipe Qualificada</h2>
-                        <p>Nossa equipe é formada por especialistas em Information Systems e especialistas em segurança cibernética, garantindo qualidade e segurança.</p>
-                    </div><!-- differentials__single__text -->
-                </div><!-- differentials__single -->
+            <h2 class="section__title" id="why_choose_us">Por que Escolher a Nossa Empresa?</h2> <!-- Título da seção -->
+            
+            <div class="section-differentials">
 
                 <div class="differentials__single">
-                    <div class="differentials__single__img">
-                        <img src="./images/icon.png" alt="Icone">
-                    </div><!-- differentials__single__img -->
+                    <h3 class="icon">
+                        <i class="fa-solid fa-people-group"></i> <!-- Ícone de equipe qualificada -->
+                    </h3>
+
                     <div class="differentials__single__text">
-                        <h2>Compromisso com a Segurança</h2>
-                        <p>Proteger seus dados é nossa prioridade. Incorporamos as mais rigorosas medidas de segurança em cada projeto.</p>
-                    </div><!-- differentials__single__text -->
-                </div><!-- differentials__single -->
+                        <h3 id="diff_1">Equipe Qualificada</h3> <!-- Título do diferencial -->
+                        <p id="diff_1_desc">Nossa equipe é formada por especialistas em Sistemas de Informação e especialistas em segurança cibernética, garantindo qualidade e segurança.</p> <!-- Descrição do diferencial -->
+                    </div>
+                </div>
 
                 <div class="differentials__single">
-                    <div class="differentials__single__img">
-                        <img src="./images/icon.png" alt="Icone">
-                    </div><!-- differentials__single__img -->
+                    <h3 class="icon">
+                        <i class="fa-solid fa-user-shield"></i> <!-- Ícone de compromisso com a segurança -->
+                    </h3>
+
                     <div class="differentials__single__text">
-                        <h2>Soluções Completas</h2>
-                        <p>Do conceito à entrega e manutenção contínua, oferecemos soluções completas para seu sucesso digital.</p>
-                    </div><!-- differentials__single__text -->
-                </div><!-- differentials__single -->
+                        <h3 id="diff_2">Compromisso com a Segurança</h3> <!-- Título do diferencial -->
+                        <p id="diff_2_desc">Proteger seus dados é nossa prioridade. Incorporamos as mais rigorosas medidas de segurança em cada projeto.</p> <!-- Descrição do diferencial -->
+                    </div>
+                </div>
 
-                <div class="clear"></div><!-- clear -->
-            </div><!-- section-one_differentials -->
-        </div><!-- center -->
-    </div><!-- section-two -->
+                <div class="differentials__single">
+                    <h3 class="icon">
+                        <i class="fa-solid fa-toolbox"></i> <!-- Ícone de soluções completas -->
+                    </h3>
 
+                    <div class="differentials__single__text">
+                        <h3 id="diff_3">Soluções Completas</h3> <!-- Título do diferencial -->
+                        <p id="diff_3_desc">Do conceito à entrega e manutenção contínua, oferecemos soluções completas para seu sucesso digital.</p> <!-- Descrição do diferencial -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé do site -->
     <footer class="footer">
-        <p class="footer__text">Todos os direitos reservados</p><!-- footer__text -->
-        <p class="footer__text">Rua Antenor Lemos, nº 585, Gravatai RS</p><!-- footer__text -->
-    </footer><!-- footer -->
-</body><!-- ends body -->
-</html><!-- ends html -->
+        <div class="copyright" id="footer">
+            &copy; Copyright | <span><a href="http://www.codificadoresdenegocios.com" target="_blank">Codificadores de Negócios</a></span> | Todos os direitos reservados. <!-- Informação de direitos autorais -->
+        </div>
+    </footer>
+
+   <!-- Scripts JS -->
+   <script src="./js/changeLanguage.js"></script> <!-- Script para mudança de idioma -->
+   <script src="./js/progressBar.js"></script> <!-- Script para barra de progresso -->
+</body>
+</html>
