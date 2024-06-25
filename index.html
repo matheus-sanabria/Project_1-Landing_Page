@@ -19,8 +19,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconexão para otimizar o carregamento de fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconexão com permissão de origem cruzada para fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- Link para a fonte Montserrat do Google Fonts -->
+    
+    <!-- Scripts JS -->
     <script src="https://kit.fontawesome.com/b576bb0203.js" crossorigin="anonymous"></script> <!-- Link para o FontAwesome para ícones -->
+    <!-- Incluindo jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <!-- Incluindo o plugin jQuery Form -->
+    <script src="https://malsup.github.io/jquery.form.js"></script> 
+    <script src="./js/form.js"></script>
+    <script src="./js/changeLanguage.js"></script> <!-- Script para mudança de idioma -->
+    <script src="./js/progressBar.js"></script> <!-- Script para barra de progresso -->
+
     <title>Transforme Ideias em Negócios | Codificadores de Negócios</title> <!-- Título da página -->
+
+
 </head>
 <body>
     <!-- Barra de Progresso -->
@@ -55,10 +68,13 @@
             </div>
             <div class="banner__form">
                 <h2 id="contact">Estamos prontos para ouvir sua visão e transformá-la em realidade. Entre em contato agora para começar.</h2> <!-- Convite para contato -->
-                <form action="">
+                <form id="myForm" action="./form.php" method="post">
+                    <div class="form__input">
+				        <input type="hidden" name="Formulário projeto 1" value="Formulario projeto 1">
+                    </div>
                     <div class="form__input">
                         <label for="name" id="form_name">Nome</label> <!-- Rótulo para o campo de nome -->
-                        <input type="text" id="name" name="name" 
+                        <input type="text" id="name" name="name"  required
                             placeholder="Digite seu nome completo" 
                             required aria-label="Nome Completo"
                             data-placeholder-pt-br="Digite seu nome completo" 
@@ -66,7 +82,7 @@
                     </div>
                     <div class="form__input">
                         <label for="email" id="form_email">E-mail</label> <!-- Rótulo para o campo de e-mail -->
-                        <input type="email" id="email" name="email" 
+                        <input type="email" id="email" name="email" required 
                             placeholder="Digite seu e-mail" 
                             required aria-label="E-mail"
                             data-placeholder-pt-br="Digite seu e-mail" 
@@ -74,7 +90,7 @@
                     </div>
                     <div class="form__input">
                         <label for="phone" id="form_phone">Telefone</label> <!-- Rótulo para o campo de telefone -->
-                        <input type="tel" id="phone" name="phone" 
+                        <input type="tel" id="phone" name="phone" required
                             placeholder="Digite seu número de telefone" 
                             required aria-label="Telefone"
                             data-placeholder-pt-br="Digite seu número de telefone" 
@@ -192,12 +208,9 @@
     <!-- Rodapé do site -->
     <footer class="footer">
         <div class="copyright" id="footer">
-            &copy; Copyright | <span><a href="http://www.codificadoresdenegocios.com" target="_blank">Codificadores de Negócios</a></span> | Todos os direitos reservados. <!-- Informação de direitos autorais -->
+            &copy; Copyright | <b><a href="http://www.codificadoresdenegocios.com" target="_blank">Codificadores de Negócios</a></b> | Todos os direitos reservados. <!-- Informação de direitos autorais -->
         </div>
     </footer>
-
-   <!-- Scripts JS -->
-   <script src="./js/changeLanguage.js"></script> <!-- Script para mudança de idioma -->
-   <script src="./js/progressBar.js"></script> <!-- Script para barra de progresso -->
+    
 </body>
 </html>

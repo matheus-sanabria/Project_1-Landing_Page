@@ -6,8 +6,6 @@
 }
 
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
     --font-family: 'Montserrat', sans-serif;
 }
 
@@ -270,7 +268,6 @@ section{
                     outline: none;/* contorno: nenhum*/
                     border: 1px solid #21234370;/* borda: 1px solida cor #ccc */
                     padding-left: 6px;/* espacamento-esquerdo interno: 6px */
-                    color: #bbbbbb;/* cor: #bbbbbb */
                     border-radius: 8px;
                 }
                     
