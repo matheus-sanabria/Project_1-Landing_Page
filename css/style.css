@@ -175,14 +175,67 @@ section{
     align-items: center;
 }
 
-.header h1{
-    font-size: 22px; 
-    color: white;
+.header .logo{
+    display: inline-block;
 }
 
-.header h1 strong{
-    color: #7d1dd6;
+.header h1 {
+    display: inline-block;
+    font-size: 22px; 
+    color: white;
+    width: 100%;
+    box-shadow: .3em 0 0 #05ffa3;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: caret 2s linear infinite alternate, typing 4s steps(23, end) 1;
+    background: linear-gradient(to right bottom, white, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
+
+.header h1 strong {
+    color: #7d1dd6;
+    animation: caret 2s linear infinite alternate, typing 4s steps(23, end) 1;
+    background: linear-gradient(to right bottom, #7d1dd6, #7d1dd6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes caret { 
+    50% { 
+        box-shadow: .3em 0 0 transparent;
+    }
+}
+
+@-webkit-keyframes caret { 
+    50% { 
+        box-shadow: .3em 0 0 transparent;
+    }
+}
+
+
 
 .header img{/* seletor de classe = (.); nome da classe = (header); nome da tag = (img); sintax de declaracao = ({})*/
     margin: 19px;/* margem externa: 19px em todos os lados */
@@ -371,6 +424,21 @@ footer.footer   {
 @media screen and (max-width:768px){
     .header{
         text-align: center;
+    }
+
+    header h1 {
+        animation: none;
+        box-shadow: none;
+        background: none;
+        -webkit-text-fill-color: #05ffa3; /* Cor alternativa para texto em dispositivos móveis */
+        text-fill-color: #05ffa3;
+    }
+
+    .header h1 strong {
+        animation: none;
+        background: none;
+        -webkit-text-fill-color: #7d1dd6; /* Cor alternativa para texto em dispositivos móveis */
+        text-fill-color: #7d1dd6;
     }
     
     .banner > .center{
